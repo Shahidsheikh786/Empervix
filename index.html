@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modern Agency Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS --> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- In <head> -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+ <!-- Plyr CSS -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+  <style>
+  
+  html {
+  scroll-behavior: smooth;
+}
+  
+  :root {
+  --plyr-color-main: seagreen; /* Replace with your desired color */
+}
+
+ hr{
+border-color: #2E8B57;
+}
+  
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0F0F0F;
+      color: #F1F5F9;
+    }
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .logo{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    </style>
+</head>
+<body class="text-white scroll-smooth">
+<!-- Plyr JS -->
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+ <div class="logo flex">
+   <input type="image" id="image" src="/logo.png" height="30px" style="border-radius:50%;" />
+   
+   <span class="ml-3 bold">Empervix</span>
+ </div>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center px-6 text-center space-y-6">
+    <div>
+      
+
+      <h1 class="text-3xl md:text-6xl font-bold opacity-0">
+        You're Posting Every Week... But No One's Buying.
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 mt-4 opacity-0">
+        Your content has value but it’s not converting. I help business & mindset coaches turn invisible posts into high converting videos that build trust, attract clients and scale impact.
+        </p>
+      <a href="https://wa.me/917499074966?text=Hey%2C%20I'm%20interested%20in%20getting%20started%20with%20you." target="_blank" class="inline-block mt-6 px-6 py-3 bg-[#2E8B57] text-white rounded-[30px] shadow-lg hover:shadow-[#2E8B57] transition duration-300 opacity-0">Get Started</a>
+      
+
+      <a href="#work" class="inline-block mt-6 ml-2 px-6 py-3 border border-[#2E8B57] text-white rounded-[30px] shadow-lg hover:shadow-[#2E8B57] transition duration-300 opacity-0">See Work</a>
+      
+    </div>
+  </section>
+
+ <!-- How I Can Help You Section -->
+  <section id="help" class="bg-[#0F0F0F] py-2 px-6 md:px-20 text-white">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold font-[Poppins] opacity-0 help-title">Here's What You Will Get</h2>
+      <p class="text-gray-400 mt-4 text-lg opacity-0 help-subtitle">
+        Not just services. Strategic weapons to grow your brand.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="border border-[#2E8B57] p-6 rounded-2xl hover:-translate-y-2 hover:shadow-[#2E8B57] transition-all duration-300 opacity-0 help-card">
+        <h3 class="text-xl font-semibold text-[#2E8B57] mb-2">High-Converting Edits</h3>
+        <hr/>
+        <p class="text-gray-400 mt-4">
+          
+         
+ Your raw videos turned into clean, authority building reels with powerful pacing, storytelling, and minimalist design that keeps people watching till the end.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-[#2E8B57] p-6 rounded-2xl hover:-translate-y-2 hover:shadow-[#2E8B57] transition-all duration-300 opacity-0 help-card">
+        <h3 class="text-xl font-semibold text-[#2E8B57] mb-2">Account + Competitor Breakdown</h3>
+        <hr/>
+        <p class="text-gray-400 mt-4">
+         
+
+You will get a deep breakdown of your last 5 reels and your top 5 competitors so we double down on what works and spot exactly what’s holding you back.
+
+          
+          </p>
+      </div>
+      
+      
+      <!-- Card 3 -->
+            <div class="border border-[#2E8B57] p-6 rounded-2xl hover:-translate-y-2 hover:shadow-[#2E8B57] transition-all duration-300 opacity-0 help-card">
+        <h3 class="text-xl font-semibold text-[#2E8B57] mb-2">Hook & Script Review</h3>
+        <hr/>
+        <p class="text-gray-400 mt-4">
+         
+
+You send the script I will refine your hook, structure, and CTA to make it scroll stopping. If needed, I will even craft the hook for you.
+
+          </p>
+      </div>
+      
+            <!-- Card 4 -->
+      <div class="border border-[#2E8B57] p-6 rounded-2xl hover:-translate-y-2 hover:shadow-[#2E8B57] transition-all duration-300 opacity-0 help-card">
+        <h3 class="text-xl font-semibold text-[#2E8B57] mb-2">Monthly Growth Report</h3>
+        <hr/>
+        <p class="text-gray-400 mt-4">
+          
+
+Every month, you get a report on what’s performing, what’s wasting time, and where you should focus next based on hard data.
+
+          
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- GSAP Animations -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    // Help Section
+    gsap.to(".help-title", {
+      scrollTrigger: {
+        trigger: ".help-title",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: -10,
+      duration: 0.8
+    });
+
+    gsap.to(".help-subtitle", {
+      scrollTrigger: {
+        trigger: ".help-subtitle",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: -10,
+      duration: 0.8,
+      delay: 0.2
+    });
+
+    gsap.utils.toArray(".help-card").forEach((card, i) => {
+      gsap.to(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+        },
+        opacity: 1,
+        y: -10,
+        duration: 0.6,
+        delay: i * 0.2
+      });
+    });
+  </script>
+
+  
+  
+  <!-- Work Showcase -->
+
+<section id="work" class="py-24 px-6 md:px-20">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl font-bold opacity-0 section-title">My Work</h2>
+    <p class="text-gray-400 mt-4 text-lg opacity-0 section-subtitle">Short-form Reels that drive attention, emotion, and results.</p>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+<div class="work-card">
+  <video class="plyr-video" controls>
+    <source src="reel1.mp4" type="video/mp4" />
+  </video>
+</div>
+   <div class="work-cards">
+  <video class="plyr-video" controls>
+    <source src="reel2.mp4" type="video/mp4" />
+  </video>
+</div>
+<div class="work-cards">
+  <video class="plyr-video" controls>
+    <source src="reel3.mp4" type="video/mp4" />
+  </video>
+</div>
+  </div>
+</section>
+
+  </section>
+  
+  <!-- Testimonials Section -->
+<section id="testimonials" class="bg-[#0A0A0A] py-2 px-6 md:px-20 text-white">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold font-[Poppins] opacity-0 testimonial-title">What Clients Say</h2>
+    <p class="text-gray-400 mt-4 text-lg opacity-0 testimonial-subtitle">Real words from real creators I’ve worked with.</p>
+  </div>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper opacity-0 testimonial-carousel">
+    <div class="swiper-wrapper">
+      <!-- Testimonial Slide -->
+      <div class="swiper-slide bg-[#161616] p-8 rounded-xl shadow-md text-left">
+        <p class="text-lg leading-relaxed italic text-gray-300">“I loved how clean and simple his style is. No overdone effects just pure storytelling and design that actually connects.
+”</p>
+        <h4 class="mt-4 font-semibold text-white">– Aman Sharma, Life Coach</h4>
+      </div>
+
+      <div class="swiper-slide bg-[#161616] p-8 rounded-xl shadow-md text-left">
+        <p class="text-lg leading-relaxed italic text-gray-300">“His hooks are next level. He even gives me prompts to write better ones my audience retention shot up fast.
+”</p>
+        <h4 class="mt-4 font-semibold text-white">– Priya Patel, Business Mentor</h4>
+      </div>
+
+      <div class="swiper-slide bg-[#161616] p-8 rounded-xl shadow-md text-left">
+        <p class="text-lg leading-relaxed italic text-gray-300">“I instantly loved the edits. Clean, impactful, and perfectly aligned with my message. Finally, content that feels like me.”</p>
+        <h4 class="mt-4 font-semibold text-white">– Rahul Verma, Mindset Coach</h4>
+      </div>
+      
+            <div class="swiper-slide bg-[#161616] p-8 rounded-xl shadow-md text-left">
+        <p class="text-lg leading-relaxed italic text-gray-300">“Before editing a single frame, he understood exactly what I was trying to say. That clarity shows in every video.”</p>
+        <h4 class="mt-4 font-semibold text-white">– Simran Khan, Mindset Coach</h4>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section id="cta" class="bg-[#0F0F0F] py-24 px-6 md:px-20 text-white text-center">
+  <h2 class="text-4xl font-bold font-[Poppins] mb-6 opacity-0 cta-title">
+    The Time to Act Is Now.
+  </h2>
+  <p class="text-gray-400 text-lg mb-10 opacity-0 cta-subtitle">
+    You know your message deserves more.
+But the longer you wait, the more opportunities slip by.
+
+This is your moment to stop the struggle, elevate your content, and turn your followers into clients.
+
+Don’t wait until you’re left behind.
+Make the choice now, and watch your business transform.
+  </p>
+  
+<a href="https://wa.me/917499074966?text=Hey%2C%20I'm%20interested%20in%20getting%20started%20with%20you." target="_blank" class="inline-block mt-6 px-6 py-3 bg-[#2E8B57] text-white rounded-[30px] shadow-lg hover:shadow-[#2E8B57] transition duration-300 opacity-0">Lets Work Together</a>
+      
+  
+    <p class="text-gray-400 text-lg mb-10 opacity-0 cta-subtitle mt-[30px]">
+   
+Only 2 spots left. Act fast, or you’ll have to wait another month.
+Your future self will thank you.
+  </p>
+  
+  
+</section>
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const fadeUp = (selector, delay = 0) => {
+      gsap.to(selector, {
+        scrollTrigger: { trigger: selector, start: "top 80%" },
+        opacity: 1,
+        y: -10,
+        duration: 0.8,
+        delay
+      });
+    };
+
+    // Hero
+    gsap.to("h1", { duration: 1, opacity: 1, y: -10, ease: "power2.out" });
+    gsap.to("p", { duration: 1.2, opacity: 1, y: -10, ease: "power2.out", delay: 0.3 });
+    gsap.to("a", { duration: 1.3, opacity: 1, y: -10, ease: "power2.out", delay: 0.6 });
+
+    // Sections
+    fadeUp(".section-title");
+    fadeUp(".section-subtitle", 0.2);
+
+    // Cards
+    gsap.utils.toArray(".card").forEach((card, i) => {
+      gsap.to(card, {
+        scrollTrigger: { trigger: card, start: "top 85%" },
+        opacity: 1,
+        y: -10,
+        duration: 0.6,
+        delay: i * 0.2
+      });
+    });
+
+   
+      //Initialize Swiper 
+    
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      }
+    }
+  });
+
+  // GSAP Animations
+  gsap.to(".testimonial-title", {
+    scrollTrigger: {
+      trigger: ".testimonial-title",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8
+  });
+
+  gsap.to(".testimonial-subtitle", {
+    scrollTrigger: {
+      trigger: ".testimonial-subtitle",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8,
+    delay: 0.2
+  });
+
+  gsap.to(".testimonial-carousel", {
+    scrollTrigger: {
+      trigger: ".testimonial-carousel",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8,
+    delay: 0.4
+  });
+    
+    //GSAP for CTA Section
+
+  gsap.to(".cta-title", {
+    scrollTrigger: {
+      trigger: ".cta-title",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8
+  });
+  
+  gsap.to(".cta-subtitle", {
+    scrollTrigger: {
+      trigger: ".cta-subtitle",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8,
+    delay: 0.2
+  });
+  
+  gsap.to(".cta-button", {
+    scrollTrigger: {
+      trigger: ".cta-button",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: -10,
+    duration: 0.8,
+    delay: 0.4
+  });
+    
+  </script>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const players = Plyr.setup('.plyr-video');
+  });
+</script>
+  
+
+  
+  
+</body>
+</html>
